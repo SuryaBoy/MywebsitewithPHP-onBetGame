@@ -1,0 +1,228 @@
+ /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 999; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* The Close Button */
+.close {
+  color: #f00;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ /* Modal Header */
+.modal-header {
+  padding: 2px 16px;
+  background-color: #f3d80f;
+  color: #166b0d;
+}
+
+/* Modal Body */
+.modal-body {padding: 2px 16px;}
+
+/* Modal Footer */
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #f3d80f;
+  color: #166b0d;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Modal Content */
+.general-modal .modal-content {
+  margin: auto;
+  width: 50%;
+}
+
+#modal-body-text {
+  font-weight: 700;
+  font-size: 20px;
+  color: #095798;
+}
+
+#ask-modal-body-text {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1da50e;
+  text-align: center;
+}
+
+#ask-modal-head-text {
+  text-align: center;
+  font-size:20px;
+  font-weight: 600;
+}
+
+.modal-btn {
+  font-size:18px;
+  font-weight:500;
+  padding:8px 15px;
+  border:2px solid black;
+  border-radius:20px;
+  color:white;
+  cursor: pointer;
+}
+
+.modal-btn:hover {
+  opacity:0.8;
+  transition: 0.3s ease-in-out;
+}
+
+#yes-btn {
+  background-color: #4267b2;
+}
+
+#no-btn {
+  background-color: #f00;
+}
+
+#askModal .modal-footer {
+  text-align: center;
+  padding:7px;
+}
+
+#askModal .modal-content {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+#instBtn {
+  height:40px;
+  padding:5px 15px;
+  border-radius:20px;
+  background-color:yellow;
+  color:green;
+  border-color:white;
+  box-shadow: none;
+  text-shadow: none;
+  font-size:15px;
+  border-style:solid;
+  margin-top: 10px;
+  margin-left: 10px;
+  cursor:pointer;
+  font-weight: 400;
+}
+
+#leader {
+  height:40px;
+  padding:5px 15px;
+  border-radius:20px;
+  background-color:red;
+  color:white;
+  border-color:white;
+  box-shadow: none;
+  text-shadow: none;
+  font-size:15px;
+  border-style:solid;
+  margin-top: 10px;
+  margin-left: 10px;
+  cursor:pointer;
+  font-weight: 700;
+}
+
+/* The animation code */
+@keyframes bordercolor {
+    from {border-color: red;}
+    to {border-color: black;}
+}
+
+.borderanim {
+    animation-name: bordercolor;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: cubic-bezier(.75,-0.71,.08,.55);
+}
+
+#bet p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/*leader board table style starts*/
+.leader,.leader th,.leader td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.leader {
+  width: 100%;
+}
+.leader td {
+  font-weight: lighter;
+  font-size:18px;
+  color:black;
+}
+/*leader board table style ends*/
+
+/*nameForm style starts*/
+
+#nameForm input[type=button] {
+  height:40px;
+  padding:5px 15px;
+  border-radius:20px;
+  background-color:#17852f;
+  color:white;
+  box-shadow: none;
+  text-shadow: none;
+  font-size:15px;
+  cursor:pointer;
+  font-weight: 400;
+  border-style: none;
+  float: none;
+}
+
+#nameForm input[type=text] {
+  height: 25px;
+  width: 50%;
+  border-width: 1px;
+  border-color: #7e7070;
+  border-radius: 15px;
+  background-color: #ede0e0;
+  float: none;
+}
+
+#nameForm label {
+  width: auto;
+  margin-right: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/*nameForm style ends*/
